@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="mx-auto w-full max-w-5xl px-4 pb-24">
         <Hero />
         <About />
         <Experience />
