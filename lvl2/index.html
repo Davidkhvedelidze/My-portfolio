@@ -2,282 +2,437 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Davit Khvedelidze · Frontend Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <div class="header">
-        <div><h3 class="logo">Logo</h3></div>
-
-        <div class="navbar">
-          <div class="navbarflex"><a href="#"> About</a></div>
-          <div class="navbarflex"><a href="#"> Work</a></div>
-          <div class="navbarflex"><a href="#"> Contact</a></div>
-        </div>
+    <div class="background-texture" aria-hidden="true"></div>
+    <div class="orb orb--primary" aria-hidden="true"></div>
+    <div class="orb orb--accent" aria-hidden="true"></div>
+    <header class="site-header" id="top">
+      <div class="container">
+        <nav class="nav" aria-label="Primary">
+          <a class="nav__logo" href="#top">Davit Khvedelidze</a>
+          <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">
+            <span class="sr-only">Toggle navigation</span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav__links" id="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
-    <div class="firstdiv">
-      <div class="flexbox1">
-        <h3 class="fontp">Branding | Image making</h3>
-        <h1 class="fonth1">My awesome portfolio</h1>
-        <p class="fontp1">And i made it myself! Yes. In Figma with Anima</p>
-      </div>
-      <div class="flexbox2">
-        <img
-          src="https://wallup.net/wp-content/uploads/2018/09/28/1027600-mountain-night-moon-purple-landscap.jpg"
-          alt=""
-          width="600px"
-        />
-      </div>
-    </div>
-
-    <div class="flexboxdiv">
-      <div class="seconddiv1">
-        <img
-          src="https://www.pngmart.com/files/16/Google-Logo-PNG-Photos.png"
-          alt=""
-          width="130px"
-        />
-      </div>
-      <div class="seconddiv2">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/48/48975.png"
-          alt=""
-          width="75px"
-        />
-      </div>
-      <div class="seconddiv3">
-        <img
-          src="https://logos-download.com/wp-content/uploads/2016/09/Dribbble_logo_black.png"
-          alt=""
-          width="130px
-        "
-        />
-      </div>
-      <div class="seconddiv4">
-        <img
-          src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png"
-          alt=""
-          width="75px"
-        />
-      </div>
-      <div class="seconddiv5">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Awwards-logotype-2018.svg/2560px-Awwards-logotype-2018.svg.png"
-          alt=""
-          width="130px"
-        />
-      </div>
-    </div>
-
-    <div class="thirddiv">
-      <div class="thirddiv1">
-        <img
-          src="https://img.freepik.com/free-psd/black-cap-front-view-mockup_125540-1038.jpg"
-          alt=""
-          width="150px"
-        />
-        <h2>Product design</h2>
-        <p>
-          This is a template figma file.turned into code using anima. Learn more
-          at AnimaApp.com
-        </p>
-      </div>
-      <div class="thirddiv1">
-        <img
-          src="https://t3.ftcdn.net/jpg/02/72/20/82/360_F_272208218_pS249ZTq8cu3yknECXm0K3U8UtOIBVvr.jpg"
-          alt=""
-          width="130px"
-        />
-        <h2>Product design</h2>
-        <p>
-          This is a template figma file.turned into code using anima. Learn more
-          at AnimaApp.com
-        </p>
-      </div>
-      <div class="thirddiv1">
-        <img
-          src="https://media.istockphoto.com/id/949396000/vector/vector-black-mock-up-city-cap.jpg?s=612x612&w=0&k=20&c=QnqHeUR97fSCA1bLo1EHlLP9V3KLGqMHwzixNCBzZss="
-          alt=""
-          width="95px"
-        />
-        <h2>Product design</h2>
-        <p>
-          This is a template figma file.turned into code using anima. Learn more
-          at AnimaApp.com
-        </p>
-      </div>
-    </div>
-
-    <div class="centerh1">
-      <h1>My latest Work</h1>
-    </div>
-    <div class="cardbox">
-      <div class="card6">
-        <img src="./gudauri res.jpg" alt="" width="330px" />
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="card6">
-        <img
-          src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
-          alt=""
-          width="330px"
-        />
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="card6">
-        <img
-          src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
-          alt=""
-          width="330px"
-        />
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="card6">
-        <img
-          src="https://thumbs.dreamstime.com/b/autumn-nature-landscape-colorful-forest-autumn-nature-landscape-colorful-forest-morning-sunlight-131400332.jpg"
-          alt=""
-          width="330px"
-        />
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="card6">
-        <img
-          src="https://images.unsplash.com/photo-1566438480900-0609be27a4be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80"
-          alt=""
-          width="330px"
-        />
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="card6">
-        <img
-          src="https://thumbs.dreamstime.com/b/landscape-nature-mountan-alps-rainbow-76824355.jpg"
-          alt=""
-          width="330px"
-        />
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-    </div>
-    <!-- 
-    <h1 class="clientsbar">Clients</h1> -->
-    <div>
-      <h1 class="clientsbar">Clients</h1>
-    </div>
-    <div class="clients-container">
-      <div class="clients-card">
-        <div>
-          <h3>
-            This is a template Figma file, turned into code using Anima. Learn
-            more at AnimaApp.com
-          </h3>
-        </div>
-
-        <div class="imagecontainer">
-          <div>
-            <img class="imageicon" src="/Components.png" alt="" width="50px" />
+    <main>
+      <section class="hero" aria-labelledby="intro-heading">
+        <div class="container hero__content">
+          <div class="hero__text">
+            <p class="hero__eyebrow">Frontend Developer · Accessible & Animated Interfaces</p>
+            <h1 class="hero__title" id="intro-heading">
+              <span>Davit</span>
+              <span>Khvedelidze</span>
+            </h1>
+            <p class="hero__description">
+              I craft inclusive, responsive, and motion-rich experiences for web and mobile applications.
+              Currently delivering high-impact interfaces at the Digital Governance Agency in Georgia.
+            </p>
+            <div class="hero__meta">
+              <a class="hero__cta" href="mailto:davit.khvedelidze.11@gmail.com">Let’s collaborate</a>
+              <a class="hero__cta hero__cta--secondary" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="hero__cta hero__cta--ghost" href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <dl class="hero__info">
+              <div>
+                <dt>Location</dt>
+                <dd>Tbilisi, Georgia</dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd>davit.khvedelidze.11@gmail.com</dd>
+              </div>
+              <div>
+                <dt>Phone</dt>
+                <dd>+995 551 18 13 58</dd>
+              </div>
+            </dl>
           </div>
-          <div>
-            <p class="starparagrap">
-              &#x2605; &#x2605; &#x2605; &#x2605; &#x2605;
-            </p>
-            <p class="starparagrap">
-              Gemma Nolen,<br />
-              Google
-            </p>
+          <div class="hero__visual" aria-hidden="true">
+            <div class="hero__badge">
+              <p>Crafting digital experiences with</p>
+              <div class="hero__stack">
+                <span>React</span>
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Framer Motion</span>
+                <span>GSAP</span>
+              </div>
+            </div>
+            <div class="hero__card">
+              <p>Focused on accessible, high-performance interfaces that engage users and support business goals.</p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="clients-card">
-        <div>
-          <h3>
-            This is a template Figma file, turned into code using Anima. Learn
-            more at AnimaApp.com
-          </h3>
-        </div>
-
-        <div class="imagecontainer">
+      <section class="about" id="about">
+        <div class="container about__layout">
           <div>
-            <img class="imageicon" src="/Image.png" alt="" width="50px" />
-          </div>
-          <div>
-            <p class="starparagrap">
-              &#x2605; &#x2605; &#x2605; &#x2605; &#x2605;
+            <h2 class="section-title">Human-centered experiences</h2>
+            <p>
+              From public sector platforms to mobile applications, I translate complex requirements into elegant,
+              accessible interfaces. I collaborate with cross-functional teams, integrate REST APIs, and deliver fluid
+              animations that reinforce product storytelling.
             </p>
-            <p class="starparagrap">
-              Gemma Nolen,<br />
-              Google
+            <p>
+              My background spans React, Next.js, React Native, and animation libraries like Framer Motion and GSAP.
+              I prioritize performance, design systems, and inclusive experiences across every screen size.
             </p>
           </div>
-        </div>
-      </div>
-      <div class="clients-card">
-        <div>
-          <h3>
-            This is a template Figma file, turned into code using Anima. Learn
-            more at AnimaApp.com
-          </h3>
-        </div>
-
-        <div class="imagecontainer">
-          <div>
-            <img class="imageicon" src="/Imაage.png" alt="" width="50px" />
-          </div>
-          <div>
-            <p class="starparagrap">
-              &#x2605; &#x2605; &#x2605; &#x2605; &#x2605;
-            </p>
-            <p class="starparagrap">
-              Gemma Nolen,<br />
-              Google
-            </p>
+          <div class="about__stats">
+            <div class="about__stat">
+              <span class="about__stat-number">3+</span>
+              <span class="about__stat-label">Production platforms launched</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number">2023</span>
+              <span class="about__stat-label">Digital Governance Agency tenure</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number">5</span>
+              <span class="about__stat-label">Animation libraries mastered</span>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="ending">
-      <div class="footer">
-        <h1>Let's work together</h1>
-        <p class="lastparagrap">
-          This is a template Figma file, turned into code using Anima. Learn
-          more at AnimaApp.com This is a template Figma file, turned into code
-          using Anima. Learn more at AnimaApp.com
-        </p>
-        <div class="icons"><img src="" alt="" />Icons here</div>
-      </div>
+      <section class="experience" id="experience">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">Blending accessibility, storytelling, and performance in fast-paced teams.</p>
+          </div>
+          <div class="experience__grid">
+            <article class="experience-card">
+              <header>
+                <p class="experience-card__meta">Jun 2023 – Present · Digital Governance Agency</p>
+                <h3>React Developer</h3>
+              </header>
+              <ul>
+                <li>Delivered responsive, accessible public-sector platforms powered by Next.js, TypeScript, and Tailwind.</li>
+                <li>Integrated REST APIs and Valtio to orchestrate reliable, global state management across experiences.</li>
+                <li>Championed performance and inclusive design principles across multi-disciplinary teams.</li>
+              </ul>
+            </article>
+            <article class="experience-card">
+              <header>
+                <p class="experience-card__meta">POLICE.GE</p>
+                <h3>National Police Services Portal</h3>
+              </header>
+              <ul>
+                <li>Engineered the public-facing experience with dynamic content sourced from REST APIs.</li>
+                <li>Implemented Valtio for state orchestration, ensuring seamless cross-component communication.</li>
+                <li>Optimized layouts for diverse devices, emphasizing clarity and trust-building interactions.</li>
+              </ul>
+            </article>
+            <article class="experience-card">
+              <header>
+                <p class="experience-card__meta">PSH.GOV.GE</p>
+                <h3>Public Services Hall Platform</h3>
+              </header>
+              <ul>
+                <li>Crafted high-visibility pages, including About Us and Statistics, highlighting critical metrics.</li>
+                <li>Introduced Framer Motion storytelling to elevate user engagement through purposeful animation.</li>
+                <li>Collaborated closely with designers to align visual narratives with accessibility best practices.</li>
+              </ul>
+            </article>
+            <article class="experience-card">
+              <header>
+                <p class="experience-card__meta">SPS.GOV.GE</p>
+                <h3>Early Next.js Adoption</h3>
+              </header>
+              <ul>
+                <li>Pioneered Next.js adoption within the agency, laying foundations for scalable architecture.</li>
+                <li>Pair-programmed with peers to uplift TypeScript quality and reusable component patterns.</li>
+                <li>Elevated delivery velocity by standardizing Tailwind-driven UI building blocks.</li>
+              </ul>
+            </article>
+            <article class="experience-card">
+              <header>
+                <p class="experience-card__meta">Signature Verification</p>
+                <h3>Confidential React Platform</h3>
+              </header>
+              <ul>
+                <li>Led REST API integrations and complex data transformations across deeply nested data structures.</li>
+                <li>Implemented secure UI patterns to support sensitive verification workflows.</li>
+                <li>Collaborated under confidentiality constraints while delivering enterprise-grade polish.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
 
-      <div class="finishing">
-        <input type="" name="Name" placeholder="Name" class="inputbox" />
-        <br />
-        <input
-          type=""
-          name="Email"
-          id=""
-          placeholder="Email"
-          class="inputbox"
-        />
-        <br />
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          placeholder="Type your message here"
-          rows="10"
-          class="inputbox"
-        ></textarea>
-        <button class="submit" type="Submit">Submit</button>
+      <section class="projects" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="section-title">Selected Projects</h2>
+            <p class="section-subtitle">Highlighting responsive, animation-driven, and data-rich user journeys.</p>
+          </div>
+          <div class="projects__grid">
+            <article class="project-card">
+              <h3>Uber Eats Experience Clone</h3>
+              <p>React Native application mirroring key Uber Eats flows with authentication, live restaurant data, and responsive layouts.</p>
+              <ul>
+                <li>Delivered real-time order updates and restaurant listings.</li>
+                <li>Focused on intuitive navigation and fluid micro-interactions.</li>
+              </ul>
+            </article>
+            <article class="project-card">
+              <h3>Photo Editing Mobile App</h3>
+              <p>Cross-platform React Native app for editing photos with cropping, filters, emojis, and device-native sharing.</p>
+              <ul>
+                <li>Optimized for both iOS and Android using a single codebase.</li>
+                <li>Implemented performant canvas interactions and accessible controls.</li>
+              </ul>
+            </article>
+            <article class="project-card">
+              <h3>E-Commerce Platform</h3>
+              <p>Responsive e-commerce experience built with React and JavaScript, featuring cart flows and real-time inventory integrations.</p>
+              <ul>
+                <li>Crafted adaptive UI with modern CSS and reusable components.</li>
+                <li>Implemented user authentication and order tracking journeys.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <div class="container skills__layout">
+          <div class="section-heading">
+            <h2 class="section-title">Skills & Tooling</h2>
+            <p class="section-subtitle">Building performant, accessible, and animated frontends across web and mobile.</p>
+          </div>
+          <div class="skills__groups">
+            <div class="skills__group">
+              <h3>Frontend</h3>
+              <ul>
+                <li>JavaScript (ES6+)</li>
+                <li>TypeScript</li>
+                <li>React & Next.js</li>
+                <li>React Native</li>
+                <li>Tailwind CSS</li>
+                <li>HTML & CSS</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h3>Animation & Interactivity</h3>
+              <ul>
+                <li>Framer Motion</li>
+                <li>GSAP & ScrollTrigger</li>
+                <li>Motion One</li>
+                <li>Framer Motion for React Native</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h3>Product & Collaboration</h3>
+              <ul>
+                <li>REST API Integration</li>
+                <li>Global State with Valtio</li>
+                <li>Agile Methodologies</li>
+                <li>Git & GitHub</li>
+                <li>NPM & Tooling</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="education" id="education">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="section-title">Education & Certifications</h2>
+            <p class="section-subtitle">Grounding practical experience with continuous learning.</p>
+          </div>
+          <div class="education__grid">
+            <article class="education-card">
+              <h3>Georgian Technical University</h3>
+              <p class="education-card__meta">Master’s Degree (In Progress) · 2023 – Current</p>
+            </article>
+            <article class="education-card">
+              <h3>Digital Institute</h3>
+              <p class="education-card__meta">React Native & Frontend Development Course · Dec 2022 – May 2023</p>
+              <p>Curriculum: HTML, JavaScript, React, React Native, Material UI, CSS, OOP, TypeScript, Firebase, Bootstrap.</p>
+            </article>
+            <article class="education-card">
+              <h3>Business and Technology University</h3>
+              <p class="education-card__meta">Bachelor of Business Management · May 2022</p>
+            </article>
+            <article class="education-card">
+              <h3>Certifications</h3>
+              <ul>
+                <li>Sales MBA · International Sales Institute (Jun 2022)</li>
+                <li>Google Digital Garage · Fundamentals of Digital Marketing (Oct 2021)</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="languages" aria-labelledby="languages-heading">
+        <div class="container">
+          <h2 class="section-title" id="languages-heading">Languages</h2>
+          <div class="languages__tags">
+            <span class="tag">Georgian · Native</span>
+            <span class="tag">English · Professional Working Proficiency</span>
+            <span class="tag">Russian · Limited Working Proficiency</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container contact__layout">
+          <div>
+            <h2 class="section-title">Let’s build your next experience</h2>
+            <p>
+              I’m open to opportunities that challenge me to push accessibility, motion, and responsive design forward.
+              Drop a note to explore collaborations or request my detailed resume.
+            </p>
+            <ul class="contact__channels">
+              <li><a href="mailto:davit.khvedelidze.11@gmail.com">davit.khvedelidze.11@gmail.com</a></li>
+              <li><a href="tel:+995551181358">+995 551 18 13 58</a></li>
+              <li><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a></li>
+            </ul>
+          </div>
+          <form class="contact__form" action="https://formspree.io/f/mknlzqdr" method="POST">
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email address" required />
+            <label for="message" class="sr-only">Message</label>
+            <textarea id="message" name="message" placeholder="Project details or questions" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© <span id="year"></span> Davit Khvedelidze. Built with React, Next.js, TypeScript, Framer Motion, and GSAP expertise.</p>
+        <a class="footer__back" href="#top">Back to top</a>
       </div>
-    </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-OLswWc7rvJttOiTMB1jyscNraKlwWxW7z3Hq0DdB0Z+3n5fYcTdsSMGBhd6sC9PG6C5kDsjeBOyEYGGe+/xSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-wsA07BNgVgjT3ZD8dPDIPpnUCJ8PbLgB0DjylVruDm7p5B70Gcxhr9Yqul05XclginiRgsUQ0Ik+10u5lCu0fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module">
+      import { animate, stagger, inView } from "https://cdn.jsdelivr.net/npm/motion@11.11.3/dist/motion.mjs";
+
+      const heroTitleSpans = document.querySelectorAll(".hero__title span");
+      animate(heroTitleSpans, { transform: ["translateY(1.5rem)", "translateY(0)"], opacity: [0, 1] }, {
+        duration: 0.8,
+        delay: stagger(0.07),
+        easing: "ease-out",
+      });
+
+      animate(".hero__cta", { opacity: [0, 1], transform: ["translateY(1rem)", "translateY(0)"] }, {
+        duration: 0.8,
+        delay: stagger(0.12, { start: 0.4 }),
+        easing: "ease-out",
+      });
+
+      inView(".project-card", ({ target }) => {
+        animate(target, { opacity: [0, 1], transform: ["translateY(2rem)", "translateY(0)"] }, { duration: 0.6, easing: "ease-out" });
+      }, { margin: "0px 0px -20% 0px" });
+
+      inView(".skills__group", ({ target }) => {
+        animate(target.querySelectorAll("li"), { opacity: [0, 1], transform: ["translateY(0.75rem)", "translateY(0)"] }, {
+          duration: 0.5,
+          delay: stagger(0.06),
+          easing: "ease-out",
+        });
+      }, { margin: "0px 0px -10% 0px" });
+    </script>
+    <script>
+      const navToggle = document.querySelector(".nav__toggle");
+      const navLinks = document.querySelector(".nav__links");
+
+      navToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("nav__links--open");
+        navToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      document.querySelectorAll(".nav__links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("nav__links--open");
+          navToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.utils.toArray(".experience-card").forEach((card, index) => {
+        gsap.from(card, {
+          scrollTrigger: {
+            trigger: card,
+            start: "top 75%",
+            toggleActions: "play none none reverse",
+          },
+          y: 80,
+          opacity: 0,
+          duration: 0.9,
+          ease: "power3.out",
+          delay: index * 0.05,
+        });
+      });
+
+      gsap.to(".orb--primary", {
+        y: 30,
+        x: 20,
+        duration: 6,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+
+      gsap.to(".orb--accent", {
+        y: -25,
+        x: -30,
+        duration: 8,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+
+      gsap.utils.toArray(".fade-section").forEach((section) => {
+        gsap.from(section, {
+          scrollTrigger: {
+            trigger: section,
+            start: "top 80%",
+          },
+          opacity: 0,
+          y: 60,
+          duration: 0.7,
+          ease: "power2.out",
+        });
+      });
+    </script>
   </body>
 </html>
