@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
-import { profile } from '../data/resume';
+import { heroHighlights, profile } from '../data/resume';
 import { usePrefersReducedMotion } from '../hooks/usePrefersReducedMotion';
 
 const Hero = () => {
@@ -40,6 +40,30 @@ const Hero = () => {
           ease: 'sine.inOut'
         }
       );
+
+      const highlightCards = gsap.utils.toArray<HTMLDivElement>('.highlight-card');
+
+      if (highlightCards.length) {
+        gsap.from(highlightCards, {
+          autoAlpha: 0,
+          y: 30,
+          duration: 0.6,
+          ease: 'power3.out',
+          stagger: 0.12,
+          delay: 0.4
+        });
+
+        highlightCards.forEach((item, index) => {
+          gsap.to(item, {
+            y: '+=8',
+            duration: 3.5,
+            repeat: -1,
+            yoyo: true,
+            ease: 'sine.inOut',
+            delay: index * 0.35
+          });
+        });
+      }
     }, card);
 
     return () => ctx.revert();
@@ -100,6 +124,18 @@ const Hero = () => {
             View experience
           </a>
         </motion.div>
+        <div aria-label="Career highlights" className="mt-10 grid gap-4 sm:grid-cols-3" role="list">
+          {heroHighlights.map((item) => (
+            <div
+              className="highlight-card section-surface border-slate-400/10 bg-slate-900/40 p-5 text-left"
+              key={item.title}
+              role="listitem"
+            >
+              <h3 className="font-display text-base font-semibold text-slate-100">{item.title}</h3>
+              <p className="mt-2 text-sm text-slate-300/85">{item.subtitle}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
