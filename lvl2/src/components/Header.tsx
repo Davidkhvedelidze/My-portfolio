@@ -40,35 +40,21 @@ const Header = () => {
   return (
     <header
       ref={barRef}
-      style={{
-        position: 'sticky',
-        top: '20px',
-        zIndex: 10,
-        display: 'flex',
-        justifyContent: 'center',
-        padding: '1.25rem 0'
-      }}
+      className="sticky top-5 z-20 flex justify-center px-4 pb-5"
     >
       <nav
         aria-label="Primary"
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '1rem',
-          padding: '0.75rem 1.25rem',
-          borderRadius: '999px',
-          border: '1px solid rgba(148, 163, 184, 0.25)',
-          background: 'rgba(15, 23, 42, 0.65)',
-          backdropFilter: 'blur(18px)',
-          boxShadow: '0 20px 60px rgba(2, 6, 23, 0.35)',
-          flexWrap: 'wrap'
-        }}
+        className="flex flex-wrap items-center gap-4 rounded-full border border-slate-400/25 bg-slate-900/70 px-5 py-3 shadow-nav backdrop-blur-xl"
       >
-        <span className="badge" style={{ marginRight: '0.5rem' }}>
+        <span className="badge pr-2">
           {profile.name.split(' ')[0]}
         </span>
         {links.map((link) => (
-          <a key={link.href} href={link.href}>
+          <a
+            key={link.href}
+            href={link.href}
+            className="text-sm font-medium text-slate-200 transition-colors duration-200 hover:text-sky-300 focus-visible:text-sky-300"
+          >
             {link.label}
           </a>
         ))}
