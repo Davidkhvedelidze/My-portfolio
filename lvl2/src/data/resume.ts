@@ -13,6 +13,11 @@ export interface Profile {
   social: SocialLink[];
 }
 
+export interface HeroHighlight {
+  title: string;
+  subtitle: string;
+}
+
 export interface ProjectHighlight {
   name: string;
   stack: string[];
@@ -51,6 +56,21 @@ export interface Language {
   name: string;
   level: string;
 }
+
+export const heroHighlights: HeroHighlight[] = [
+  {
+    title: 'Impactful civic platforms',
+    subtitle: 'Ship public services like POLICE.GE, PSH.GOV.GE, and SPS.GOV.GE with clarity and trust.'
+  },
+  {
+    title: 'Motion-led storytelling',
+    subtitle: 'Blend Framer Motion, GSAP, and Tailwind to craft accessible, animated product journeys.'
+  },
+  {
+    title: 'Multi-platform delivery',
+    subtitle: 'Build responsive web and React Native apps from Uber Eats clones to bespoke photo tools.'
+  }
+];
 
 export const profile: Profile = {
   name: 'Davit Khvedelidze',
